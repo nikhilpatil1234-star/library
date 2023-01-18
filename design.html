@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@500&family=Sofia+Sans:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-container" >
+    <div class="main-container">
+      <div class="header-conatainer">
+        <h1>TEACHER CONSOLE</h1>
+        <h3>VIEW STUDENT MARKS</h3>
+
+        <div class="header-options">
+          <form>
+            <h3 for="MARKS">CHOOSE A MODULE:</h3>
+            <select name="MARKS" id="MARKS">
+              <option value="volvo">LISTENING</option>
+              <option value="saab">READING</option>
+              <option value="opel">WRITING</option>
+              <option value="audi">SPEAKING</option>
+            </select>
+
+            <input class="header-btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content-heading">
+          <h1>LISTENING MODULE</h1>
+          <h2>WRITE TEXT:</h2>
+        </div>
+        <div class="content-write-text">
+          <form>
+            <input
+              class="write-text-inputs"
+              type="text"
+              id="fname"
+              name="fname"
+            /><br />
+            <input
+              class="write-text-btn header-btn"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+        <div class="content-upload-text-file">
+          <h4 class="content-center">OR</h4>
+          <h2>UPLOAD TEXT FILE:</h2>
+          <form action="/action_page.php">
+            <input
+              class="upload-file-input"
+              type="file"
+              id="myFile"
+              name="filename"
+            />
+            <input class="header-btn" type="submit" />
+          </form>
+        </div>
+        <div class="content-upload-audio-file">
+          <h4 class="content-center">OR</h4>
+          <h2>UPLOAD AUDIO FILE:</h2>
+          <form action="/action_page.php">
+            <input
+              class="upload-file-input"
+              type="file"
+              id="myFile"
+              name="filename"
+            />
+            <input class="header-btn" type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
